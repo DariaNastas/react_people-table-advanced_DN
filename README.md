@@ -1,9 +1,17 @@
-# React TypeScript Starter Pack
+# Таблиця React People (Advanced) - фільтрація та сортування
 
-To use this template click `Use this template`
+Для того, щоб переглянути робочий проєкт перейдіть за покликанням:  [the working example](https://darianastas.github.io/react_people-table-advanced_DN/) та оберіть вкладку People
 
-### Available Scripts
+### React
 
-`Deploy` - available to deploy your application to gh-pages
+В проєкті реалізовано можливість фільтрувати та сортувати людей у ​​таблиці.
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+1. Усі фільтри та параметри сортування збережено як параметри пошуку URL-адреси.
+1. Зберігаються параметри пошуку під час навігації по People-сторінці (People Page)
+1. Бічна панель із фільтрами має з’явитися лише тоді, коли люди завантажені.
+1. NameFilter оновлює query-параметр пошуку текстом із введених даних.
+1. CenturyFilter дозволяє вибрати кілька століть або всі.
+1. Реалізовано сортування за name, sex, born, died клацанням стрілок у стовпчиках;
+  - перше клацання на стовпці сортує людей за вибраним полем за зростанням ( a -> zабо 0 -> 9);
+  - друге клацання (коли люди вже відсортовані за зростанням за цим полем) змінює порядок сортування на протилежний;
+  - третій клік (коли люди вже відсортовані у зворотному порядку за цим полем) вимикає сортування;
